@@ -1,0 +1,33 @@
+/* paga-max-width = 1024px
+
+mixin-max-width(width = paga-max-width)
+  max-width: width
+  margin-left: auto
+  margin-right: auto
+
+.container
+  mixin-max-width(800px)
+
+.section
+  margin-bottom: 24px
+  mixin-max-width(90%)
+
+.section--landing
+  mixin-max-width()
+
+gridsize = (1..12)
+.grid
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  justify-content: flex-start
+  flex-direction: row
+
+[class^='grid--item']
+  flex-shrink: 0
+  margin-right: 12px
+  flex-grow: 1
+
+for i in gridsize
+  .grid-item-{i}
+    width: (100 / i) * 1% */
