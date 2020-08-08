@@ -4,16 +4,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina Web</title>
+  <title>static page</title>
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-  <i class='bx bxl-facebook'></i>
-  <i class='bx bxl-twitter'></i>
-  <i class='bx bxl-instagram'></i>
+  <header class="header" id="inicio">
+    <img src="./assets/icon/hamburguesa.svg" alt="" class="hamburguer" />
+    <nav class="menu-navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicio">Servicio</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#expertos">Expertos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="contenedor head">
+      <h1>Convertimos tus sueños en realidad</h1>
+      <p class="copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ex fuga recusandae minus
+        perspiciatis exercitationem, consequuntur vel! Enim, repudiandae eaque! Eius inventore sit est ea reprehenderit
+        nemo at sed asperiores?</p>
+    </div>
+  </header>
+  <main>
+    <!-- start services -->
+    <section class="services contenedor" id="servicio">
+      <h2 class="subtitulo">Nuestro servicio</h2>
+      <div class="contenedor-servicio">
+        <img src="./assets/icon/code_development_.svg" alt="" />
+        <div class="checklist-servicio">
+          <div class="service">
+            <h3 class="n-service"><span class="number">1</span>Frontend Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ducimus quibusdam repudiandae tenetur hic
+              ex distinctio sint assumenda mollitia commodi! Delectus magni voluptates necessitatibus similique debitis
+              cum et! Soluta, dignissimos.</p>
+          </div>
+          <div class="service">
+            <h3 class="n-service"><span class="number">2</span>Backend Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ducimus quibusdam repudiandae tenetur hic
+              ex distinctio sint assumenda mollitia commodi! Delectus magni voluptates necessitatibus similique debitis
+              cum et! Soluta, dignissimos.</p>
+          </div>
+          <div class="service">
+            <h3 class="n-service"><span class="number">3</span>React Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ducimus quibusdam repudiandae tenetur hic
+              ex distinctio sint assumenda mollitia commodi! Delectus magni voluptates necessitatibus similique debitis
+              cum et! Soluta, dignissimos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end services -->
+    <!-- start gallery -->
+    <section class="gallery" id="portafolio">
+      <div class="contenedor">
+        <h2 class="subtitulo">Galeria</h2>
+        <div class="contenedor-galeria">
+          <img src="./assets/img/gallery-1.jpg" class='img-galeria' alt="" />
+          <img src="./assets/img/gallery-2.jpg" class='img-galeria' alt="" />
+          <img src="./assets/img/gallery-3.jpg" class='img-galeria' alt="" />
+          <img src="./assets/img/gallery-4.jpg" class='img-galeria' alt="" />
+          <img src="./assets/img/gallery-5.jpg" class='img-galeria' alt="" />
+          <img src="./assets/img/gallery-6.jpg" class='img-galeria' alt="" />
+        </div>
+      </div>
+    </section>
+    <!--    <section class="imagen-light">
+      <img src="./assets/icon/close.svg" alt="" class="close" />
+      <img src="" alt="" class="agregar-imagen" />
+    </section> -->
+    <!-- end gallery -->
+    <!-- start expert -->
+    <div class="section contenedor" id="expertos">
+      <h2 class="subtitulo">Expertos en:</h2>
+      <section class="experts">
+        <div class="cont-expert">
+          <img src="./assets/icon/html.svg" alt="">
+          <h3 class="n-expert">HTML</h3>
+        </div>
+        <div class="cont-expert">
+          <img src="./assets/icon/css.svg" alt="">
+          <h3 class="n-expert">CSS</h3>
+        </div>
+        <div class="cont-expert">
+          <img src="./assets/icon/javascript.svg" alt="">
+          <h3 class="n-expert">JavaScript</h3>
+        </div>
+      </section>
+    </div>
+    <!-- end expert -->
+  </main>
+  <footer id="contacto">
+    <div class="contenedor footer-content">
+      <div class="contact-us">
+        <h2 class="brand">Damian Vigo Frontend Developer</h2>
+        <p>Somos expertos en la creacion de tus sueños</p>
+      </div>
+      <div class="social-media">
+        <a href="/" class="social-media-icon">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="/" class="social-media-icon">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="/" class="social-media-icon">
+          <i class='bx bxl-instagram'></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/menu.js"></script>
+  <script src="./js/lightbox.js"></script>
 </body>
 
 </html>
