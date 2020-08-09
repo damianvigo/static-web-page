@@ -1,0 +1,45 @@
+footer 
+  background: colorSecundary
+  padding-bottom: 0.1px /* sin esta linea ocurre el colapso de margenes con .line  */
+  .footer-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding-top: 60px
+    padding-bottom: 40px
+  .contact-us
+    width: 60%
+    color: colorLight
+    .brand
+      font-weight: 500
+      font-size: 40px
+      +p
+       font-weight: 500
+  .social-media
+    width: 40%
+    display: flex
+    justify-content: flex-end
+    &--icon
+      display: inline-block
+      margin-left: 20px
+      width: 60px
+      height: 60px
+      border: 1px solid colorLight
+      border-radius: 50%
+      text-align: center
+      color: colorLight
+      i
+        font-size: 30px
+        line-height: 60px
+      &:hover
+        background: colorLight
+        color: #764ba2
+
+.line
+  width: 90%
+  max-width: 1200px
+  margin: 0 auto
+  height: 2px
+  background: colorLight
+  margin-bottom: 60px
