@@ -12,12 +12,6 @@
       cursor: pointer
       object-fit: cover
 
-.showImage
-  transform: scale(1)
-
-.show
-  transform: translate(0)
-
 .imagen-light
   position: fixed
   background: rgba(0,0,0, .6)
@@ -36,9 +30,15 @@
     transition: transform .3s .2s
     transform: scale(0)
     object-fit: cover
+  .show
+    transform: translate(0)
+  .showImage
+    transform: scale(1)
   .close
     position: absolute
     top: 15px
     right: 15px
     width: 40px
     cursor: pointer
+
+
