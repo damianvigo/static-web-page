@@ -54,6 +54,7 @@ header .menu-navegacion .spread {
   transform: translate(0);
 }
 header .head {
+  text-align: center;
   padding: 0;
   height: 100%;
   display: flex;
@@ -122,6 +123,7 @@ header .head .copy {
   margin-bottom: 15px;
   box-shadow: 0 0 6px rgba(0,0,0,0.5);
   cursor: pointer;
+  object-fit: cover;
 }
 .showImage {
   transform: scale(1);
@@ -147,11 +149,12 @@ header .head .copy {
   border-radius: 10px;
   transition: transform 0.3s 0.2s;
   transform: scale(0);
+  object-fit: cover;
 }
 .imagen-light .close {
   position: absolute;
-  top: 45px;
-  right: 805px;
+  top: 15px;
+  right: 15px;
   width: 40px;
   cursor: pointer;
 }
@@ -230,4 +233,79 @@ footer .social-media--icon:hover {
   height: 2px;
   background: #fff;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+  .header .head .titulo {
+    font-size: 40px;
+  }
+  .header .menu-navegacion {
+    width: 50vw;
+  }
+  .contenedor .contenedor-servicio img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .checklist-servicio {
+    width: 80%;
+  }
+  .services .service {
+    margin-bottom: 30px;
+  }
+  .imagen-light .agregar-imagen {
+    width: 80%;
+  }
+  .gallery .contenedor .contenedor-galeria .img-galeria {
+    width: 45%;
+  }
+  .contenedor .cont-expert {
+    width: 80%;
+  }
+}
+footer .footer-content {
+  justify-content: center;
+}
+footer .footer-content .contact-us {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 40px;
+}
+footer .footer-content .social-media {
+  width: 80%;
+  justify-content: space-evenly;
+}
+footer .footer-content .social-media .social-media--icon {
+  margin-left: 0;
+}
+footer .footer-content .social-media i {
+  margin-left: 0;
+}
+@media screen and (max-width: 500px) {
+  .header .hamburguer {
+    top: 20px;
+    right: 20px;
+  }
+  .header .head .titulo {
+    font-size: 30px;
+  }
+  .header .head .copy {
+    font-size: 16px;
+  }
+  .header .menu-navegacion {
+    width: 65vw;
+  }
+  .imagen-light .agregar-imagen {
+    width: 95%;
+  }
+  .subtitulo {
+    font-size: 30px;
+  }
+  .gallery .contenedor .contenedor-galeria .img-galeria {
+    width: 95%;
+  }
+  footer .footer-content .social-media {
+    width: 100%;
+  }
+  footer .footer-content .contact-us {
+    width: 90%;
+  }
 }
